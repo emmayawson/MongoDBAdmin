@@ -1,0 +1,4 @@
+MongoDBAdmin
+============
+
+MongoDB administration tool
