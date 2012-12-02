@@ -8,9 +8,6 @@
         </a>
         <a class="brand" href="/mongodb/index">MongoDBAdmin</a>
         <div class="nav-collapse collapse">
-        <p class="navbar-text pull-right">
-            Logged in as <a href="#" class="navbar-link">Username</a>
-        </p>
         
         <ul class="nav">
             <li class="active"><a href="/mongodb/index">MongoDB</a></li>

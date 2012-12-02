@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>MongoDBAdmin</title>
+    <title>Sign in &middot; Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -12,12 +12,36 @@
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 40px;
         padding-bottom: 40px;
+        background-color: #f5f5f5;
       }
-      .sidebar-nav {
-        padding: 9px 0;
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
       }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
     </style>
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -36,28 +60,19 @@
 
   <body>
 
-    <?php $this->load->view("layout/header"); ?>
+    <div class="container">
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        
-        <div class="span3">
-            <?php $this->load->view("layout/sidebar"); ?>
-        </div><!--/span-->
-        
-        <div class="span9">
-            <?php $this->load->view($path_view); ?>
-        </div><!--/span-->
-        
-      </div><!--/row-->
+      <form class="form-signin">
+        <h3 class="form-signin-heading">MongoDBAdmin Login</h3>
+        <input type="text" class="input-block-level" placeholder="Email address">
+        <input type="password" class="input-block-level" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+      </form>
 
-      <hr>
-
-      <footer>
-        <?php $this->load->view("layout/footer"); ?>
-      </footer>
-
-    </div><!--/.fluid-container-->
+    </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
@@ -77,5 +92,6 @@
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
     -->
+
   </body>
 </html>

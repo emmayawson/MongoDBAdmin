@@ -54,6 +54,8 @@ $route['operations'] = 'operations/index';
 //Query routes
 $route['query'] = 'query/index';
 
+//Session routes
+$route['login'] = 'session/login';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
