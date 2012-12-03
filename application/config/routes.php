@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = 'mongodb';
+$route['default_controller'] = 'home';
 $route['404_override'] = '';
 
 
@@ -46,7 +46,7 @@ $route['404_override'] = '';
 $route['databases'] = 'databases/index';
 
 //Mongodb routes
-$route['mongodb'] = 'mongodb/index';
+$route['home'] = 'home/index';
 
 //Operations routes
 $route['operations'] = 'operations/index';
